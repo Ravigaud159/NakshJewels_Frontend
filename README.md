@@ -8,13 +8,13 @@
 A mini e-commerce application built using React.js (Frontend) and Node.js + Express (Backend) as part of the Naksh Jewels ReactJS & Node.js Internship Assessment.
 The project demonstrates clean code structure, API integration, state management, and basic DevOps using Docker.
 
-"C:\Users\rahul\Videos\Screen Recordings\Screen Recording 2026-02-08 160921.mp4"
+<video width="100%" controls>
+  <source src="https://github.com/user-attachments/assets/xxxxxxxx-xxxx.mp4" type="video/mp4">
+</video>
 
 📌 Features
 Frontend (React)
-
 Product listing page
-
 Product card with:
 
 <img width="1894" height="675" alt="image" src="https://github.com/user-attachments/assets/40752aac-ff49-4ce5-995d-299220df6680" />
@@ -80,14 +80,13 @@ DevOps
 Docker
 
 Docker Compose
-
 Hosting
 
 Frontend: Vercel
 
 Backend: Vercel / Render (API-based)
 
-📁 Project Structure
+ # 📁 Project Structure
 
 
 nakas_jewels/
@@ -137,13 +136,18 @@ nakas_jewels/
 │   └── README.md
 
 
+
+# 
 cd frontend
 npm install
 npm run dev
 
 
-🌐 Deployment
+
+
+# 🌐 Deployment
 Frontend (Vercel)
+ https://naksh-jewels-frontend-five.vercel.app/
 
 Deployed using Vercel
 
@@ -153,11 +157,13 @@ Fully responsive and production-ready
 
 Backend (Vercel Serverless)
 
+https://naksh-jewels-backend.vercel.app/
+
 Express API deployed using Vercel serverless functions
 
 No local file uploads (CDN-based image handling)
 
-🖼️ Image Handling
+# 🖼️ Image Handling
 
 Images are served using Unsplash CDN
 
