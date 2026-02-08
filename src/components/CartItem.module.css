@@ -1,0 +1,148 @@
+.cartItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+.cartItem:hover {
+  transform: translateY(-4px) scale(1.01);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  background: linear-gradient(135deg, #ffffff, #f9fafb);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+}
+
+/* Image */
+.image {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+/* Details */
+.details {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #222;
+}
+
+.price {
+  font-size: 14px;
+  color: #555;
+}
+
+.total {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 4px;
+  color: #000;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+}
+
+/* Quantity Controls */
+.quantityControls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.qtyBtn {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: none;
+  background: #f1f1f1;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.qtyBtn:hover {
+  background: #e0e0e0;
+  transform: scale(1.05);
+}
+
+.quantity {
+  min-width: 28px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Remove Button */
+.removeBtn {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  font-size: 13px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.removeBtn:hover {
+  background: #d9363e;
+  transform: translateY(-1px);
+}
+
+/* ------------------- */
+/* Mobile Responsive */
+/* ------------------- */
+
+@media (max-width: 600px) {
+  .cartItem {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .image {
+    width: 100%;
+    height: 180px;
+    border-radius: 12px;
+  }
+
+  .details {
+    margin-left: 0;
+  }
+
+  .actions {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .qtyBtn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .removeBtn {
+    padding: 8px 16px;
+  }
+}
